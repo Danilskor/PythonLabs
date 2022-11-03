@@ -44,4 +44,3 @@ def task3_sub_task3():
         if word[0] == 'е' or word[0] == 'Е':
             count = count + 1
     print('В предложении:', str, count, 'букв на букву \"е\"')
-task3_sub_task3()

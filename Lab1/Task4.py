@@ -1,5 +1,4 @@
 import random
-import random as ran
 
 
 def task4_sub_task1():
@@ -35,6 +34,3 @@ def task4_sub_task3():
             if ind > 0:
                 summa = summa + ind
     print(summa)
-
-
-task4_sub_task3()
