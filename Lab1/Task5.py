@@ -5,8 +5,7 @@ import numpy as np
 
 
 def function(x_values):
-    yValues = exp(-x_values) / (sqrt(exp(-x_values) + 1)) - 1
-    return yValues
+    return exp(-x_values) / (sqrt(exp(-x_values) + 1)) - 1
 
 
 def function_graf(x_values):
@@ -67,3 +66,22 @@ def output_matrix(matrix):
         for j in range(len(matrix[i])):
             print(matrix[i][j], end=' ')
         print()
+
+
+def task5_sub_task4():
+    while True:
+        size = int(input('Введите размерность вводимого массива'))
+        if size > 0:
+            x_values = []
+            y_values = []
+            print('Введите значения масива')
+            for i in range(size):
+                x_values.append(float(input()))
+                y_values.append(function(x_values[i]))
+            print(x_values)
+            print(y_values)
+            plt.plot(x_values, y_values)
+            plt.show()
+            break
+        else:
+            print('Введено число меньше нуля')

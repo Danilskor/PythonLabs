@@ -2,7 +2,9 @@ import random
 
 
 def task4_sub_task1():
+    print('Введите первое число')
     a = float(input())
+    print('Введите второе число')
     b = float(input())
     if a > b:
         print(a)
@@ -13,6 +15,7 @@ def task4_sub_task1():
 
 
 def task4_sub_task2():
+    print('Введите число')
     a = float(input())
     if a > 0:
         print('введённое число больше нуля')
