@@ -51,16 +51,19 @@ def task5_sub_task2():
 
 
 def task5_sub_task3(matrix):
-    trance_matrix = [[0 for j in range(len(matrix))] for i in range (len(matrix[0]))]
+    trance_matrix = [[0 for j in range(len(matrix))] for i in range(len(matrix[0]))]
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             trance_matrix[j][i] = matrix[i][j]
+    print('Исходная матрица:')
+    output_matrix(matrix)
+    print('Транспонираванная матрица:')
+    output_matrix(trance_matrix)
     return trance_matrix
 
 
-new_matrix = [[1, 2, 3, 4, 5],
-              [1, 2, 3, 4, 5],
-              [1, 2, 3, 4, 5],
-              [1, 2, 3, 4, 5],
-              [1, 2, 3, 4, 5]]
-a = task5_sub_task3(new_matrix)
+def output_matrix(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(matrix[i][j], end=' ')
+        print()
