@@ -2,7 +2,7 @@ import random
 import random as ran
 
 
-def task1_sub_task1():
+def task4_sub_task1():
     a = float(input())
     b = float(input())
     if a > b:
@@ -13,7 +13,7 @@ def task1_sub_task1():
         print('a = b')
 
 
-def task1_sub_task2():
+def task4_sub_task2():
     a = float(input())
     if a > 0:
         print('введённое число больше нуля')
@@ -23,7 +23,7 @@ def task1_sub_task2():
         print('введённое число равно нулю')
 
 
-def task1_sub_task3():
+def task4_sub_task3():
     valueList = [[0] * 5 for i in range(5)]
     for i in range(5):
         for j in range(5):
@@ -37,4 +37,4 @@ def task1_sub_task3():
     print(summa)
 
 
-task1_sub_task3()
+task4_sub_task3()
